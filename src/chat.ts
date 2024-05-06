@@ -45,7 +45,7 @@ export const handle = async (req: IRequest): Promise<string> => {
   `;
 
   console.log("system", system);
-  const chat = ChatHistory.getInstance(req.env.personal_ai_chats);
+  const chat = ChatHistory.getInstance(req.env.personal_ai_chat);
   await chat.add(req.request.chat_id, {
     role: "user",
     content: req.request.input,
