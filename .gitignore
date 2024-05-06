@@ -10,3 +10,5 @@ yarn.lock
 
 .dev.vars
 wrangler.dev.toml
+
+.DS_Store
